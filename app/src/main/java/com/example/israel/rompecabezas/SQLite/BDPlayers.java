@@ -10,10 +10,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BDPlayers extends SQLiteOpenHelper {
 
-    String sql_player = "CREATE TABLE players ( " +
-            "id_player INTEGER PRIMARY KEY," +
-            "nickname varchar(50)," +
-            "score varchar(20))";
+    String sql_player = "CREATE TABLE players (" +
+            "id_player INTEGER PRIMARY KEY, " +
+            "nickname VARCHAR(50), " +
+            "score VARCHAR(20))";
 
     public BDPlayers(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
