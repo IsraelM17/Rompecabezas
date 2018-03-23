@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".RompeCabezas" />
         <activity android:name=".QuizFour" />
-        <activity android:name=".QuizSix"></activity>
+        <activity android:name=".QuizSix" />
+        <activity android:name=".QuizEight"></activity>
     </application>
 
 </manifest>

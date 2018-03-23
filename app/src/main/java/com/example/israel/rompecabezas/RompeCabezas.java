@@ -62,6 +62,8 @@ public class RompeCabezas extends AppCompatActivity{
                     Toast.makeText(RompeCabezas.this, "6 piezas", Toast.LENGTH_SHORT).show();
                 }
                 else if(menuButton.getId() == R.id.eigth_pieces){
+                    Intent intent = new Intent(RompeCabezas.this, QuizEight.class);
+                    startActivity(intent);
                     Toast.makeText(RompeCabezas.this, "8 piezas", Toast.LENGTH_SHORT).show();
                 }
 
