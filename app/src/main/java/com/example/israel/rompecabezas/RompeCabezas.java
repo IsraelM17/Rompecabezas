@@ -1,7 +1,5 @@
 package com.example.israel.rompecabezas;
 
-import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,9 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,9 +18,6 @@ import com.github.johnpersano.supertoasts.library.SuperActivityToast;
 import com.github.johnpersano.supertoasts.library.utils.PaletteUtils;
 import com.imangazaliev.circlemenu.CircleMenu;
 import com.imangazaliev.circlemenu.CircleMenuButton;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class RompeCabezas extends AppCompatActivity{
 
@@ -59,11 +52,13 @@ public class RompeCabezas extends AppCompatActivity{
             public void onItemClick(CircleMenuButton menuButton) {
 
                 if(menuButton.getId() == R.id.four_pieces) {
-                    Intent intent = new Intent(RompeCabezas.this, Quiz_four.class);
+                    Intent intent = new Intent(RompeCabezas.this, QuizFour.class);
                     startActivity(intent);
                     Toast.makeText(RompeCabezas.this, "4 piezas", Toast.LENGTH_SHORT).show();
                 }
                 else if(menuButton.getId() == R.id.six_pieces){
+                    Intent intent = new Intent(RompeCabezas.this, QuizSix.class);
+                    startActivity(intent);
                     Toast.makeText(RompeCabezas.this, "6 piezas", Toast.LENGTH_SHORT).show();
                 }
                 else if(menuButton.getId() == R.id.eigth_pieces){

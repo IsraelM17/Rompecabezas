@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RompeCabezas" />
-        <activity android:name=".Quiz_four"></activity>
+        <activity android:name=".QuizFour" />
+        <activity android:name=".QuizSix"></activity>
     </application>
 
 </manifest>
